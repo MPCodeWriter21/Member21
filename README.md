@@ -61,7 +61,11 @@ Windows:
 
 #### socks
 
-> pip install socks
+> pip install pysocks
+
+### You can use this command to install requird libraries instead
+
+> pip install -r requirements.txt
 
 ## License
 
