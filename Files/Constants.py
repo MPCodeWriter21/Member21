@@ -1,4 +1,4 @@
-# Python3
+#!usr/bin/python3
 # Constants
 # CodeWriter21
 
@@ -59,7 +59,7 @@ banner = colors.Cyan + r"""
 # Usernames
 Speed_channel = '@orderspeedmember'
 Tel_channel = '@TelMemberbots'
-channels = ['orderspeedmember', 'TelMemberbots', 'TelMembere', 'TelHediye', 'PEAGES']
+channels = ['orderspeedmember', 'infospeedmembers', 'TelMemberbots', 'TelMembere', 'TelHediye', 'PEAGES']
 bots = ['member_speedrobot', 'TelMembers_Bot']
 
 # Logger
