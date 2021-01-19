@@ -46,7 +46,7 @@ phttp = args.phttp
 # Gets inputs from user
 try:
 	logger.writel('Getting inputs...')
-	while phone == '':
+	while not phone:
 		phone = input(a + colors.Pink + f"Phone {co} " + colors.Cyan)
 	if psocks == "tor":
 		psocks = "127.0.0.1:9050"
