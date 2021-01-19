@@ -1,4 +1,4 @@
-# Python3
+#!usr/bin/python3
 # Functions
 # CodeWriter21
 
@@ -11,6 +11,7 @@ from time import sleep
 from .Constants import *
 from datetime import datetime
 import sys, os
+code = ''
 
 # Prints text
 def print(*args, end = '\n'):
@@ -27,7 +28,7 @@ def mkdirs():
 # Exits
 def Exit(text = ''):
 	if not text:
-		text = n + colors.Red + 'Exit'
+		text = n + colors.Red + 'Exit' + end
 	print (text)
 	logger.writel('Exit')
 	sys.exit()
@@ -119,16 +120,16 @@ async def connect(client):
 
 # Sends code request to telegram account and logins
 async def login(client, phone):
+	global code
 	logger.writel(f'client({phone}) is logging in...')
-	code = ''
 	def code_callback():
+		global code
+		if not code:
+			code = input(a + colors.Blue + 'Enter Your Code : ' + colors.Cyan)
 		return code
-	await client.send_code_request(phone)
-	logger.writel('code-request sent.')
 	while True:
 		try:
-			code = input(a + colors.Blue + 'Enter Your Code : ' + colors.Cyan)
-			await client.sign_in(phone, code)
+			await client.start(phone=phone, code_callback=code_callback)
 			logger.writel('client signed in.')
 		except SessionPasswordNeededError:
 			logger.writel('client needs 2step Password...')
@@ -137,6 +138,7 @@ async def login(client, phone):
 			logger.writel('client signed in.')
 			sleep(3)
 		except PhoneCodeInvalidError:
+			code = ''
 			logger.writel('Invalid login code!')
 			print (n + colors.Red + 'Invalid Login Code!!' + end)
 		except KeyboardInterrupt:
