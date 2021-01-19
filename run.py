@@ -1,11 +1,18 @@
-# Python3
+#!usr/bin/python3
 # Main Script
 # CodeWriter21
 
 # Imports
-from Files.Functions import *
-import socks, asyncio
-from telethon.errors import FloodWaitError
+try:
+	from Files.Functions import *
+	import socks, asyncio
+	from telethon.errors import FloodWaitError
+except KeyboardInterrupt:
+	print ('Script stopped by user!')
+	Exit()
+except:
+	print ('Import failed!\nTry installing requirements : pip install requirements.txt\nTry cloning Member21 again  : git clone https://GitHub.com/MPCodeWriter21/Member21')
+	exit()
 
 # Makes needed directories
 mkdirs()
