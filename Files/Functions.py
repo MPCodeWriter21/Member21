@@ -61,7 +61,7 @@ def get_api():
 	return api_id, api_hash
 
 # Saves new API information in config file
-def set_api(api_id, api_hash):
+def set_api(api_id:int, api_hash:str):
 	logger.writel('Setting API...')
 	f = open('config', 'w')
 	f.write(f"""# CodeWriter21
@@ -77,7 +77,7 @@ api-hash={api_hash}
 	f.close()
 
 # Saves a backup of file
-def Backup(path, name):
+def Backup(path:str, name:str):
 	fr = open(path, 'rb')
 	data = fr.read()
 	fr.close()
@@ -92,7 +92,7 @@ def ttime():
 	return f'{now.year}-{now.month}-{now.day} {now.hour}.{now.minute}.{now.second}'
 
 # Tries to connect to Telegram
-async def connect(client):
+async def connect(client:TelegramClient):
 	logger.writel('client is connecting...')
 	try:
 		print (a + colors.Yellow + "Connecting", end = '')
@@ -119,7 +119,7 @@ async def connect(client):
 		Exit()
 
 # Sends code request to telegram account and logins
-async def login(client, phone):
+async def login(client:TelegramClient, phone:str):
 	global code
 	logger.writel(f'client({phone}) is logging in...')
 	def code_callback():
@@ -152,21 +152,21 @@ async def login(client, phone):
 		break
 
 # Joins a channel or chat
-async def join(client, channel):
+async def join(client:TelegramClient, channel):
 	logger.writel(f"Joining: {channel} ...")
 	await client(JoinChannelRequest(channel))
 	logger.writel(f"Joined: {channel} .")
 
 # Adds channel to joined channels
-def Add(ch_id, name):
+def Add(ch_id:int, name):
 	logger.writel(f"Saving subscribed channel: {ch_id} ...")
 	f = open(os.path.join('Subscribed channels', 'SC' + str(name)), 'a')
 	f.write(str(ch_id) + '\n')
 	f.close()
 	logger.writel(f"Subscribed channel saved: {ch_id} .")
 
-#
-async def leave(client, me):
+# Leaves channel
+async def leave(client:TelegramClient, me):
 	logger.writel("Leaving subscribed channels...")
 	f = open(os.path.join('Subscribed channels', 'SC' + str(me.id)), 'r')
 	channels = f.read().split('\n')
@@ -181,7 +181,7 @@ async def leave(client, me):
 	logger.writel("Leaving end...")
 
 # Joins a channel and clicks on a button to receive some points
-async def Click(client, msg, channel_username, row=1, column=0):
+async def Click(client:TelegramClient, msg, channel_username:str, row:int=1, column:int=0):
 	logger.writel("Clicking...")
 	try:
 		me = await client.get_me()

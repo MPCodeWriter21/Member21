@@ -78,7 +78,7 @@ logger.writel("Client made.")
 
 
 # Handles flood wait error
-def wait(s):
+def wait(s:int):
 	for i in range(s):
 		fwait = True
 		sleep(1)
