@@ -3,11 +3,7 @@
 # CodeWriter21
 
 # Imports
-import platform
 from .Loging import log
-
-# System
-windows = (platform.system() == 'Windows')
 
 # Colors
 class colors:
@@ -21,23 +17,11 @@ class colors:
 	BCyan  = '\033[1;96m'
 	White  = '\033[1;37m'
 
-# Clears colors if system is windows
-if windows:
-	colors.Gray   = ''
-	colors.Red    = ''
-	colors.Green  = ''
-	colors.Yellow = ''
-	colors.Blue   = ''
-	colors.Pink   = ''
-	colors.Cyan   = ''
-	colors.BCyan  = ''
-	colors.White  = ''
-
 # Useful things
-end = '' if windows else '\033[0m'
+end = '\033[0m'
 r   = '\r'
 e   = colors.White + '===================================================' + end
-a   = f'{colors.Cyan}[' + ('' if windows else '\033[35m') + f'={colors.Cyan}] ' + end
+a   = f'{colors.Cyan}[' + '\033[35m' + f'={colors.Cyan}] ' + end
 p   = f'{colors.Yellow}[{colors.Green}+{colors.Yellow}] ' + end
 n   = f'{colors.Yellow}[{colors.Red}-{colors.Yellow}] ' + end
 co  = colors.Red + ':' + end

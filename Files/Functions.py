@@ -12,10 +12,16 @@ from .Constants import *
 from datetime import datetime
 import sys, os
 code = ''
+inp = input
 
 # Prints text
 def print(*args, end = '\n'):
 	logger.print(*args, end = end)
+
+# Gets input
+def input(text):
+	print (text, end='')
+	return inp()
 
 # Makes needed directories
 def mkdirs():

@@ -1,15 +1,22 @@
-# Python3
+#!usr/bin/python3
 # Loging
 # CodeWriter21
 
 # Imports
 from datetime import datetime
-from .Constants import *
-import os
+from colorama import AnsiToWin32 as AnsiToWin
+import os, sys, platform
 
 # Logger class
 class log:
 	is_started = False
+	def __init__(self):
+		self.ATW = AnsiToWin(sys.stdout)
+		if 'windows' in platform.system().lower():
+			self.write_text = self.ATW.write_and_convert
+		else:
+			self.write_text = self.ATW.write
+
 	def start(self, me):
 		self.me = me
 		self.new_line()
@@ -50,4 +57,4 @@ class log:
 		f = open(path, 'a')
 		f.write(f'[{str(now)}] ' + txt)
 		f.close()
-		print(*args, end = end)
+		self.write_text(txt)
