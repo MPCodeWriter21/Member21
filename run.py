@@ -3,7 +3,8 @@
 # CodeWriter21
 
 # Imports
-try:
+#try:
+if True:
 	from Files.Functions import *
 	import socks, asyncio
 	from telethon.errors import FloodWaitError
@@ -25,6 +26,8 @@ lmode = False
 
 print (banner)
 logger.writel('Banner printed.')
+check_version()
+logger.writel('Vesion Checked.')
 
 logger.writel('Checking commandline inputs...')
 # Checks the commandline inputs

@@ -10,9 +10,18 @@ from telethon.tl.functions.channels import JoinChannelRequest
 from time import sleep
 from .Constants import *
 from datetime import datetime
-import sys, os
+import sys, os, requests
 code = ''
 inp = input
+
+# Checks for updates
+def check_version():
+	req = requests.get('https://raw.githubusercontent.com/MPCodeWriter21/Member21/master/version.txt')
+	if float(req.text) > version:
+		print (colors.BackRed + '!!NEW VERSION!!' + end)
+		print (a + colors.Green + 'New Version ' + colors.Yellow + 'is available!' + end + '\n' +
+			'You can get it using: ' + colors.Blue + 'git fetch && git rebase' + end)
+		print ()
 
 # Prints text
 def print(*args, end = '\n'):

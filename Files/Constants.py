@@ -5,6 +5,9 @@
 # Imports
 from .Loging import log
 
+# Version
+version = 1.0
+
 # Colors
 class colors:
 	Gray   = '\033[90m'
@@ -16,6 +19,15 @@ class colors:
 	Cyan   = '\033[96m'
 	BCyan  = '\033[1;96m'
 	White  = '\033[1;37m'
+
+	BackGray    = '\033[100m'
+	BackRed     = '\033[101m'
+	BackGreen   = '\033[102m'
+	BackYellow  = '\033[103m'
+	BackPurple  = '\033[104m'
+	BackPink    = '\033[105m'
+	BackCyan    = '\033[106m'
+	BackWhite   = '\033[107m'
 
 # Useful things
 end = '\033[0m'

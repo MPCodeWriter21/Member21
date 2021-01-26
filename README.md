@@ -63,6 +63,10 @@ Windows:
 
 > pip install pysocks
 
+#### requests
+
+> pip install requests
+
 ### You can use this command to install requird libraries instead
 
 > pip install -r requirements.txt
