@@ -11,7 +11,7 @@ except KeyboardInterrupt:
 	print ('Script stopped by user!')
 	Exit()
 except:
-	print ('Import failed!\nTry installing requirements : pip install requirements.txt\nTry cloning Member21 again  : git clone https://GitHub.com/MPCodeWriter21/Member21')
+	print ('Import failed!\nTry installing requirements : pip install -r requirements.txt\nTry cloning Member21 again  : git clone https://GitHub.com/MPCodeWriter21/Member21')
 	exit()
 
 # Makes needed directories

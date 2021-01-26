@@ -6,7 +6,7 @@
 from .Loging import log
 
 # Version
-version = 1.01
+version = 1.02
 
 # Colors
 class colors:
