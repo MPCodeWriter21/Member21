@@ -3,8 +3,7 @@
 # CodeWriter21
 
 # Imports
-#try:
-if True:
+try:
 	from Files.Functions import *
 	import socks, asyncio
 	from telethon.errors import FloodWaitError
