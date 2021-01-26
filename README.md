@@ -63,6 +63,10 @@ Windows:
 
 > pip install pysocks
 
+#### colorama
+
+> pip install colorama
+
 #### requests
 
 > pip install requests

@@ -1,4 +1,5 @@
 asyncio
 telethon
-socks
+pysocks
 requests
+colorama
