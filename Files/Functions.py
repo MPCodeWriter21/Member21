@@ -14,15 +14,6 @@ import sys, os, requests
 code = ''
 inp = input
 
-# Checks for updates
-def check_version():
-	req = requests.get('https://raw.githubusercontent.com/MPCodeWriter21/Member21/master/version.txt')
-	if float(req.text) > version:
-		print (colors.BackRed + '!!NEW VERSION!!' + end)
-		print (a + colors.Green + 'New Version ' + colors.Yellow + 'is available!' + end + '\n' +
-			'You can get it using: ' + colors.Blue + 'git fetch && git rebase' + end)
-		print ()
-
 # Prints text
 def print(*args, end = '\n'):
 	logger.print(*args, end = end)
@@ -31,6 +22,24 @@ def print(*args, end = '\n'):
 def input(text):
 	print (text, end='')
 	return inp()
+
+# Checks for updates
+def check_version():
+	try:
+		logger.writel("Checking for new version...")
+		req = requests.get('https://raw.githubusercontent.com/MPCodeWriter21/Member21/master/version.txt')
+		if float(req.text) > version:
+			print (colors.BackRed + '!!NEW VERSION!!' + end)
+			print (a + colors.Green + 'New Version ' + colors.Yellow + 'is available!' + end + '\n' +
+				'You can get it using: ' + colors.Blue + 'git fetch && git rebase' + end)
+			print ()
+	except KeyboardInterrupt:
+		logger.writel("Script Stoped by user: KeyboardInterrupt")
+		print (r + n + colors.Red + 'Script Stoped by user!!')
+		Exit()
+	except:
+		logger.writel("Couldn't check for New Version!")
+		print(n + colors.BackRed + "Couldn't check for New Version" + end + co + colors.Pink + ' Please check your Internet Connection.')
 
 # Makes needed directories
 def mkdirs():
