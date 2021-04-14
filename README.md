@@ -1,25 +1,39 @@
 
 # Member21
 
-Member21 is a Python script which you can use in order to receive Gems in supported Telegram bots to buy telegram members.
+Member21 is a Python script which you can use in order to receive Gems in Free Member Telegram bots.
 
 It's totally free and ready to use. You can install it using the guide below and start using it without any problem whatsoever and you can donate us to help script.
 
+## Version 2 Major Update
+
+- **Configs Added**: Now you can create or edit configs for your preferred bots
+
+- **Better UI**
+
+- **Bug Fixes**
+
+- **More Errors Handled**
+
 ## Supported Bots
 
-*1.*  **Speed Member**  *:*  **[@member_speedrobot](https://t.me/member_speedrobot?start=372059561)**
+###Any Bot You Want
 
-*2.*  **TelMembers**  *:*  **[@TelMembers_Bot](https://t.me/TelMembers_Bot?start=372059561)**
+You can make configs for any bot you want using *ConfigManager.py*.
+
+> python ConfigManager.py
+
+You run the script and select the options you want and your config is ready!
 
 ## About
 
 Made by Mehrad Pooryoussof.
 
-My Telegram: [@MPooryoussof](https://t.me/MPooryoussof)
-
 My Telegram Channel: [@MPCodeWriter](https://t.me/CodeWriter21)
 
 My Blog: [CodeWriter21.blogsky.com](http://CodeWriter21.blogsky.com)
+
+My Aparat Channel: [CodeWriter21](https://www.aparat.com/CodeWriter21)
 
 ## Installation
 
@@ -80,27 +94,63 @@ Windows:
 Every thing on this repository is under the [MIT license](https://en.wikipedia.org/wiki/MIT_License).
 
 ### Donate
-*Citcoin(**BTC**) wallet*:
-> 3AvWAYSpHj3qpBX8HeSLxfxQt6DqpMkEP1
+*Bitcoin(**BTC**) wallet*:
+> bc1qgds5kek973y2wf9f39jw6esfcvatk883m52drt
 
 *Ethereum(**ETH**) wallet*:
-> 0xFf97697d8B6ECc321E8E2DacDDCdd42144F8610A
+> 0x3818636C552B599149f1b050DacE01Fa5Fb11acA
+
+*Ripple(**XRP**) wallet*:
+> rDaqk8TFKgLt9WpKBJZZjry6bMJ9bc23o1
 
 *Bitcoin Cash(**BCH**) wallet*:
-> bitcoincash:qq4xw5nmj8x2n5m390tqnv3u5vtxqmsvncae6yva67
+> qqf6cuudzc5xyxkcrmvvad6prems8ptmysredrs4pd
+
+*Binance Coin(**BNB**) wallet*:
+> bnb12z02cs3lh4kaj65g8u04syhted24py2nmfrt7q
+
+*Binance Smart Chain(**BNB**) wallet*:
+> 0x3818636C552B599149f1b050DacE01Fa5Fb11acA
 
 *Litecoin(**LTC**) wallet*:
-> LZV9AEQbSoHCLgQiEXiRR8Jt7xwCypAPUQ
+> ltc1qn6lg8vdz925lecvjanyldj3cw8u0u9s9y0gv63
 
 *TRON(**TRX**) wallet*:
-> TPNRtanC187bYXcRDEBeKeSZC4A5LQNZUp
+> TSy8sT9XazhvPxMy9MUKo1QaG6KCBxpUWF
 
 *Nano(**NANO**) wallet*:
-> nano_18mk14hc7mmp4zx96twahbjkcdih1nmjbbibcpwdch6eupz45p317y5wn963
+> nano_1xyd5i88ufyf6dd8yakb57o11bjgix3p9tt9b1b9k8u881z3bs9rnuyagr4q
 
 *Dogecoin(**DOGE**) wallet*:
-> DBtx83HgTG83vUPn23GfK5Q2o5i5FEdzWc
+> D8AksQi5c5nDGH3RtWhJHLriE5mrnFEQCn
 
 *Ethereum Classic(**ETC**) wallet*:
-> 0x6E1d18c26a9FcE76ae4D64C1a5d21CaD380469F5
+> 0xB9751cB01216dff2C8B5182997727Af1BF4D1e04
+
+*Polkadot(**DOT**) wallet*:
+> 124oC4MgLHZquAztKuAKrQeczr1TGdk6RwtKBxPP9qUM2dC8
+
+*Tezos(**XTZ**) wallet*:
+> tz1VY6ocNZUkM2tEGyQyUsEUx9ayqMXECALB
+
+*Stellar(**XLM**) wallet*:
+> GCLCQJAJYA275PJAENWI5QM7K5ARXT3QBUDSKDIXJPFJZ4ZHYGNI3ZG7
+
+*Cosmos(**ATOM**) wallet*:
+> cosmos1p4n64zjdv5whmpqtwe0thstzpsmyr5xefs7v5r
+
+*VeChain(**VET**) wallet*:
+> 0x7092b3Be120446fFA4B41Bb7882615377F06Da71
+
+*Dash(**DASH**) wallet*:
+> XxfEXUSSHXnR7YLccZKkr4qK9BsxKtqJjB
+
+*Zcash(**ZEC**) wallet*:
+> t1Kr4AXn4fbQLzxqwQa2Dr4BGkWpzH45mt6
+
+*Filecoin(**FIL**) wallet*:
+> f1j3l5vbrum4l7l5cbti6ed6jheddzh33dsyfmp4i
+
+*Nimq(**NIM**) wallet*:
+> NQ21 2TP7 XYHT TFYS SEXF 87S5 Y3GT XH3F 0D0E
 
