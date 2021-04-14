@@ -17,7 +17,7 @@ It's totally free and ready to use. You can install it using the guide below and
 
 ## Supported Bots
 
-###Any Bot You Want
+### Any Bot You Want
 
 You can make configs for any bot you want using *ConfigManager.py*.
 
